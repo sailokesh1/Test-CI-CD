@@ -36,7 +36,7 @@ pipeline {
             steps {
                 echo "Running code quality checks..."
                 sh 'echo "Static analysis passed ✅"'
-                // e.g., integrate SonarQube or linting here
+                // e.g., integrate SonarQube or linting here.
             }
         }
 
