@@ -64,6 +64,7 @@ pipeline {
         }
         failure {
             echo "Pipeline failed ❌"
+            echo "Sending failure notification..."
         }
         always {
             echo "Cleaning up workspace..."
