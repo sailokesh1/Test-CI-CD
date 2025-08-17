@@ -51,8 +51,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying ${APP_NAME}:${APP_VERSION}..."
-                sh 'scp target/*.jar user@server:/opt/app/'
-                sh 'ssh user@server "systemctl restart my-app"'
+                sh 'scp target/*.jar lokesh@GROOTxLOKI:/opt/app/'
+                sh 'ssh lokesh@GROOTxLOKI "systemctl restart my-app"'
             }
         }
     }
